@@ -20526,6 +20526,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/dustincrawford/Documents/CodingDojo/csharp_stack/asp_net_core/dojo_survey/Views/_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/dustincrawford/Documents/CodingDojo/csharp_stack/asp_net_core/dojo_survey/Views/Home/Result.cshtml",
       "TargetPath": "Views\\Home\\Result.cshtml",
       "FileKind": "mvc"

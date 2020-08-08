@@ -29,3 +29,4 @@
 /Users/dustincrawford/Documents/CodingDojo/csharp_stack/asp_net_core/dojo_survey/obj/Debug/netcoreapp3.1/dojo_survey.genruntimeconfig.cache
 /Users/dustincrawford/Documents/CodingDojo/csharp_stack/asp_net_core/dojo_survey/obj/Debug/netcoreapp3.1/dojo_survey.csproj.CopyComplete
 /Users/dustincrawford/Documents/CodingDojo/csharp_stack/asp_net_core/dojo_survey/obj/Debug/netcoreapp3.1/Razor/Views/Home/Result.cshtml.g.cs
+/Users/dustincrawford/Documents/CodingDojo/csharp_stack/asp_net_core/dojo_survey/obj/Debug/netcoreapp3.1/Razor/Views/_ViewImports.cshtml.g.cs

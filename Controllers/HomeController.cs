@@ -9,24 +9,24 @@ namespace dojo_survey.Controllers
         [HttpGet("")]
         public IActionResult Index()
         {
-            ViewBag.Locations = new List<string>()
-            {
-                "San Jose", "Seattle", "McLean", "Boise"
-            };
+            Survey yourSurvey = new Survey();
+            yourSurvey.Location = "San Jose";
+            yourSurvey.Language = "C#";
 
-            ViewBag.Languages = new List<string>()
-            {
-                "C#", "Java", "Python", "Ruby"
-            };
-
-            return View("Index");
+            return View("Index", yourSurvey);
         }
 
         [HttpPost("Result")]
         public IActionResult Result(Survey yourSurvey)
         {
-            
-            return View("Result", yourSurvey);
+            if (ModelState.IsValid)
+            {
+                return View("Result", yourSurvey);
+            }
+            else 
+            {
+                return View("Index", yourSurvey);
+            }
         }
     }
 }

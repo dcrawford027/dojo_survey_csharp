@@ -1,3 +1,6 @@
+@model Survey
+@using System.Collections.Generic
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,32 +11,29 @@
 </head>
 <body>
     <div class="container">
-        <form action="/result" method="POST">
+        <form asp-action="Result" asp-controller="Home" method="post">
+            <span asp-validation-for="Name"></span>
             <div class="form-group">
-                <label for="Name">Your Name</label>
-                <input type="text" class="form-control" name="Name" id="Name">
+                <label asp-for="Name"></label>
+                <input asp-for="Name" class="form-control">
             </div>
+
+            <span asp-validation-for="Location"></span>
             <div class="form-group">
-                <label for="Location">Dojo Location</label>
-                <select name="Location" id="Location" class="custom-select">
-                    @foreach (string location in ViewBag.Locations)
-                    {
-                        <option>@location</option>
-                    }
-                </select>
+                <label asp-for="Location"></label>
+                <select asp-for="Location" asp-items="Model.Locations" class="custom-select"></select>
             </div>
+
+            <span asp-validation-for="Language"></span>
             <div class="form-group">
-                <label for="Language">Favorite Language:</label>
-                <select name="Language" id="Language" class="custom-select">
-                    @foreach (string language in ViewBag.Languages)
-                    {
-                        <option>@language</option>
-                    }
-                </select>
+                <label asp-for="Language"></label>
+                <select asp-for="Language" asp-items="Model.Languages" class="custom-select"></select>
             </div>
+
+            <span asp-validation-for="Comment"></span>
             <div class="form-group">
-                <label for="Comment">Comment (optional):</label>
-                <textarea name="Comment" id="Comment" cols="50" rows="10"></textarea>
+                <label asp-for="Comment"></label>
+                <textarea asp-for="Comment" cols="50" rows="10"></textarea>
             </div>
             <button class="btn btn-success" type="submit">Submit</button>
         </form>
