@@ -10,12 +10,12 @@
     <div class="container">
         <form action="/result" method="POST">
             <div class="form-group">
-                <label for="name">Your Name</label>
-                <input type="text" class="form-control" name="name" id="name">
+                <label for="Name">Your Name</label>
+                <input type="text" class="form-control" name="Name" id="Name">
             </div>
             <div class="form-group">
-                <label for="location">Dojo Location</label>
-                <select name="location" id="location" class="custom-select">
+                <label for="Location">Dojo Location</label>
+                <select name="Location" id="Location" class="custom-select">
                     @foreach (string location in ViewBag.Locations)
                     {
                         <option>@location</option>
@@ -23,8 +23,8 @@
                 </select>
             </div>
             <div class="form-group">
-                <label for="language">Favorite Language:</label>
-                <select name="language" id="language" class="custom-select">
+                <label for="Language">Favorite Language:</label>
+                <select name="Language" id="Language" class="custom-select">
                     @foreach (string language in ViewBag.Languages)
                     {
                         <option>@language</option>
@@ -32,8 +32,8 @@
                 </select>
             </div>
             <div class="form-group">
-                <label for="comment">Comment (optional):</label>
-                <textarea name="comment" id="comment" cols="50" rows="10"></textarea>
+                <label for="Comment">Comment (optional):</label>
+                <textarea name="Comment" id="Comment" cols="50" rows="10"></textarea>
             </div>
             <button class="btn btn-success" type="submit">Submit</button>
         </form>
